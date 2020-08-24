@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'GtWalsheim';
+    src: url('/static/fonts/gt-walsheim-bold-web.ttf');
+    font-weight: bold;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'GtWalsheim';
+    src: url('/static/fonts/gt-walsheim-light-web.ttf');
+    font-display: auto;
+}
+
+* {
+    font-family: 'GtWalsheim';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

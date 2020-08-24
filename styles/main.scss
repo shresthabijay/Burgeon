@@ -1,0 +1,99 @@
+#home {
+  main {
+    #first-section {
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+
+      #video-background {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+
+        video {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          object-fit: cover;
+        }
+
+        #overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          font-weight: bold;
+          background-image: linear-gradient(
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.7)
+          );
+        }
+      }
+
+      header {
+        position: sticky;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 1.5rem 10rem;
+        // background-image: linear-gradient(to right top, rgba(255, 255, 255, 0.8), rgba(248, 248, 248, 0.5));
+        position: relative;
+        color: white;
+
+        #logo {
+          font-weight: bold;
+          font-size: 1.6rem;
+          cursor: pointer;
+        }
+
+        nav {
+          display: flex;
+          justify-content: space-between;
+
+          .nav-item {
+            padding: 0 2rem;
+            font-size: 1.2rem;
+            border: black;
+            cursor: pointer;
+          }
+        }
+      }
+
+      #centered-section {
+        position: absolute;
+        top: 0;
+        padding: 0 10rem;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+
+        #horizontal-bar {
+          width: 4rem;
+          height: 1px;
+          background-color: white;
+        }
+
+        #title {
+          margin-left: 2rem;
+
+          h1 {
+            text-align: left;
+            font-size: 3.7rem;
+            font-weight: bold;
+            color: rgb(198, 248, 213);
+            text-shadow: 2px 2px 3px rgba(19, 19, 19, 0.5);
+          }
+
+          .subtitle {
+            background-color: rgba(75, 83, 98, 0.582);
+            color: rgb(207, 248, 242);
+            font-size: 1.4rem;
+            padding: 0.07rem;
+          }
+        }
+      }
+    }
+  }
+}
