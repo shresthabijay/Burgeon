@@ -8,9 +8,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@svgr/webpack": "^5.4.0",
     "@zeit/next-sass": "^1.0.1",
+    "classnames": "^2.2.6",
     "framer-motion": "^2.4.3-beta.2",
     "next": "9.3.5",
+    "next-react-svg": "^1.1.2",
     "nextjs-fonts": "^0.22.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",

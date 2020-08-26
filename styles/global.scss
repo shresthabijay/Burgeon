@@ -1,19 +1,53 @@
 @font-face {
-    font-family: 'GtWalsheim';
-    src: url('/static/fonts/gt-walsheim-bold-web.ttf');
-    font-weight: bold;
-    font-display: auto;
+  font-family: "GtWalsheim";
+  src: url("/static/fonts/gt-walsheim-bold-web.ttf");
+  font-weight: bold;
+  font-display: auto;
 }
 
 @font-face {
-    font-family: 'GtWalsheim';
-    src: url('/static/fonts/gt-walsheim-light-web.ttf');
-    font-display: auto;
+  font-family: "GtWalsheim";
+  src: url("/static/fonts/gt-walsheim-light-web.ttf");
+  font-display: auto;
 }
 
 * {
-    font-family: 'GtWalsheim';
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: "GtWalsheim";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --card-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px,
+    rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+  --card-shadow-large: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  --important-text-color: blue;
+  --border-radius-1: 4px;
+}
+
+.card {
+  box-shadow: var(--card-shadow);
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 4px;
+  transition: box-shadow linear 300ms;
+
+  &.hoverable {
+    &:hover {
+      box-shadow: var(--card-shadow-large);
+    }
+  }
+}
+
+.h-gap {
+  height: 1rem;
+  .x2 {
+    height: 2rem;
+  }
+}
+
+.important-text {
+    color: var(--important-text-color)
 }
